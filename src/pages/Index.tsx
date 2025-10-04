@@ -26,6 +26,7 @@ const Index = () => {
   const { toast } = useToast();
   const [cart, setCart] = useState<CartItem[]>([]);
   const [deliveryMethod, setDeliveryMethod] = useState<'delivery' | 'pickup'>('delivery');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const menuItems: MenuItem[] = [
     {
@@ -136,6 +137,7 @@ const Index = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: 'smooth' });
+    setMobileMenuOpen(false);
   };
 
   return (
@@ -159,7 +161,17 @@ const Index = () => {
             <button onClick={() => scrollToSection('contacts')} className="hover:text-primary transition-colors">Контакты</button>
           </div>
 
-          <Sheet>
+          <div className="flex items-center gap-2">
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="md:hidden"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <Icon name={mobileMenuOpen ? "X" : "Menu"} size={24} />
+            </Button>
+
+            <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" className="relative">
                 <Icon name="ShoppingCart" size={20} />
@@ -257,7 +269,21 @@ const Index = () => {
               </div>
             </SheetContent>
           </Sheet>
+          </div>
         </nav>
+
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t bg-background animate-fade-in">
+            <nav className="container mx-auto px-4 py-4 flex flex-col gap-4">
+              <button onClick={() => scrollToSection('hero')} className="text-left py-2 hover:text-primary transition-colors">Главная</button>
+              <button onClick={() => scrollToSection('menu')} className="text-left py-2 hover:text-primary transition-colors">Меню</button>
+              <button onClick={() => scrollToSection('delivery')} className="text-left py-2 hover:text-primary transition-colors">Доставка</button>
+              <button onClick={() => scrollToSection('about')} className="text-left py-2 hover:text-primary transition-colors">О нас</button>
+              <button onClick={() => scrollToSection('services')} className="text-left py-2 hover:text-primary transition-colors">Услуги</button>
+              <button onClick={() => scrollToSection('contacts')} className="text-left py-2 hover:text-primary transition-colors">Контакты</button>
+            </nav>
+          </div>
+        )}
       </header>
 
       <section id="hero" className="relative h-[600px] flex items-center justify-center overflow-hidden">
