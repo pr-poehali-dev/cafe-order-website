@@ -153,12 +153,12 @@ const Index = () => {
           </div>
           
           <div className="hidden md:flex items-center gap-8">
-            <button onClick={() => scrollToSection('hero')} className="text-foreground text-xl font-extrabold hover:text-primary transition-colors">Главная</button>
-            <button onClick={() => scrollToSection('menu')} className="text-foreground text-xl font-extrabold hover:text-primary transition-colors">Меню</button>
-            <button onClick={() => scrollToSection('delivery')} className="text-foreground text-xl font-extrabold hover:text-primary transition-colors">Доставка</button>
-            <button onClick={() => scrollToSection('about')} className="text-foreground text-xl font-extrabold hover:text-primary transition-colors">О нас</button>
-            <button onClick={() => scrollToSection('services')} className="text-foreground text-xl font-extrabold hover:text-primary transition-colors">Услуги</button>
-            <button onClick={() => scrollToSection('contacts')} className="text-foreground text-xl font-extrabold hover:text-primary transition-colors">Контакты</button>
+            <button onClick={() => scrollToSection('hero')} className="text-blue-600 text-xl font-extrabold hover:text-blue-700 transition-colors">Главная</button>
+            <button onClick={() => scrollToSection('menu')} className="text-blue-600 text-xl font-extrabold hover:text-blue-700 transition-colors">Меню</button>
+            <button onClick={() => scrollToSection('delivery')} className="text-blue-600 text-xl font-extrabold hover:text-blue-700 transition-colors">Доставка</button>
+            <button onClick={() => scrollToSection('about')} className="text-blue-600 text-xl font-extrabold hover:text-blue-700 transition-colors">О нас</button>
+            <button onClick={() => scrollToSection('services')} className="text-blue-600 text-xl font-extrabold hover:text-blue-700 transition-colors">Услуги</button>
+            <button onClick={() => scrollToSection('contacts')} className="text-blue-600 text-xl font-extrabold hover:text-blue-700 transition-colors">Контакты</button>
           </div>
 
           <div className="flex items-center gap-2">
