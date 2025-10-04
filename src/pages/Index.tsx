@@ -363,7 +363,7 @@ const Index = () => {
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold">О нас</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Premium Café — это уютное место, где каждое блюдо создается с любовью и вниманием к деталям. 
+              Сойка Кафе — это уютное место, где каждое блюдо создается с любовью и вниманием к деталям. 
               Наш шеф-повар использует только свежие продукты высшего качества.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -446,14 +446,14 @@ const Index = () => {
           <Card className="p-6 text-center">
             <Icon name="Mail" size={32} className="mx-auto mb-3 text-primary" />
             <h3 className="font-semibold mb-2">Email</h3>
-            <p className="text-muted-foreground">info@premiumcafe.ru<br/>Ответим в течение часа</p>
+            <p className="text-muted-foreground">info@soykacafe.ru<br/>Ответим в течение часа</p>
           </Card>
         </div>
       </section>
 
       <footer className="bg-secondary text-secondary-foreground py-8">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-sm">&copy; 2024 Premium Café. Все права защищены.</p>
+          <p className="text-sm">&copy; 2024 Сойка Кафе. Все права защищены.</p>
         </div>
       </footer>
     </div>
