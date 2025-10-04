@@ -301,14 +301,10 @@ const Index = () => {
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-200 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
         </div>
         
-        <div className="relative z-10 text-center space-y-8 animate-fade-in px-4 max-w-5xl mx-auto">
-          <h2 className="text-6xl md:text-8xl font-extrabold tracking-tight text-white drop-shadow-2xl">
-            Премиальная кухня
-          </h2>
+        <div className="relative z-10 text-center space-y-8 animate-fade-in max-w-5xl mx-[2488px] px-[31px] py-[66px]">
+          <h2 className="text-6xl md:text-8xl font-extrabold tracking-tight text-white drop-shadow-2xl"></h2>
           
-          <p className="text-2xl md:text-3xl text-white font-semibold max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
-            Изысканные блюда от шеф-повара с доставкой на дом
-          </p>
+          <p className="text-2xl md:text-3xl text-white font-semibold max-w-3xl leading-relaxed drop-shadow-lg px-4 mx-[18px] py-[71px]">Домашняя европейская кухня, вкуснейшие десерты и свежесваренный кофе</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button 
@@ -340,7 +336,7 @@ const Index = () => {
             </div>
             <div className="text-center bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
               <div className="text-4xl font-bold text-white">5★</div>
-              <div className="text-sm text-white/90 mt-2">Рейтинг</div>
+              <div className="text-sm text-white/90 mt-2">Рейтинг в Яндекс </div>
             </div>
           </div>
         </div>
