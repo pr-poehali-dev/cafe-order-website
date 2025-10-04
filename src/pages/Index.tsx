@@ -286,21 +286,66 @@ const Index = () => {
         )}
       </header>
 
-      <section id="hero" className="relative h-[600px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img 
-            src="/img/46649d33-5f1a-40d1-a8f7-14495a2bc97a.jpg" 
-            alt="Restaurant interior" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-600/60 via-blue-500/50 to-cyan-400/40" />
+      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-100">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-400 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
         </div>
-        <div className="relative z-10 text-center text-white space-y-6 animate-fade-in px-4">
-          <h2 className="text-5xl md:text-7xl font-bold tracking-tight">Премиальная кухня</h2>
-          <p className="text-xl md:text-2xl max-w-2xl mx-auto">Изысканные блюда от шеф-повара с доставкой на дом</p>
-          <Button size="lg" onClick={() => scrollToSection('menu')} className="text-lg px-8">
-            Посмотреть меню
-          </Button>
+        
+        <div className="relative z-10 text-center space-y-8 animate-fade-in px-4 max-w-5xl mx-auto">
+          <div className="inline-block">
+            <img 
+              src="https://cdn.poehali.dev/files/5331cd08-968a-44b6-86a5-9f4b44ea9022.png" 
+              alt="Сойка Кафе" 
+              className="h-32 w-auto mx-auto mb-6 drop-shadow-2xl"
+            />
+          </div>
+          
+          <h2 className="text-6xl md:text-8xl font-extrabold tracking-tight bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 bg-clip-text text-transparent">
+            Премиальная кухня
+          </h2>
+          
+          <p className="text-2xl md:text-3xl text-blue-800 font-semibold max-w-3xl mx-auto leading-relaxed">
+            Изысканные блюда от шеф-повара с доставкой на дом
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+            <Button 
+              size="lg" 
+              onClick={() => scrollToSection('menu')} 
+              className="text-xl px-10 py-6 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all"
+            >
+              Посмотреть меню
+            </Button>
+            
+            <Button 
+              size="lg" 
+              variant="outline"
+              onClick={() => scrollToSection('contacts')} 
+              className="text-xl px-10 py-6 border-2 border-blue-600 text-blue-600 hover:bg-blue-50 shadow-lg"
+            >
+              Контакты
+            </Button>
+          </div>
+          
+          <div className="grid grid-cols-3 gap-8 max-w-3xl mx-auto pt-12">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-600">100+</div>
+              <div className="text-sm text-blue-700 mt-2">Блюд в меню</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-600">30 мин</div>
+              <div className="text-sm text-blue-700 mt-2">Быстрая доставка</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-600">5★</div>
+              <div className="text-sm text-blue-700 mt-2">Рейтинг</div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <Icon name="ChevronDown" size={32} className="text-blue-600" />
         </div>
       </section>
 
