@@ -302,14 +302,6 @@ const Index = () => {
         </div>
         
         <div className="relative z-10 text-center space-y-8 animate-fade-in px-4 max-w-5xl mx-auto">
-          <div className="inline-block">
-            <img 
-              src="https://cdn.poehali.dev/files/5331cd08-968a-44b6-86a5-9f4b44ea9022.png" 
-              alt="Сойка Кафе" 
-              className="h-32 w-auto mx-auto mb-6 drop-shadow-2xl"
-            />
-          </div>
-          
           <h2 className="text-6xl md:text-8xl font-extrabold tracking-tight text-white drop-shadow-2xl">
             Премиальная кухня
           </h2>
