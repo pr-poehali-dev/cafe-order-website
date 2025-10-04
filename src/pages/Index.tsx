@@ -141,24 +141,24 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen py-0">
+    <div className="min-h-screen">
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img 
               src="https://cdn.poehali.dev/files/5331cd08-968a-44b6-86a5-9f4b44ea9022.png" 
               alt="Сойка Кафе" 
-              className="h-12 w-auto mx-[17px] my-[15px] px-0"
+              className="h-12 w-auto"
             />
           </div>
           
-          <div className="hidden md:flex items-center gap-8 my-0 mx-0 py-0">
-            <button className="hover:text-primary transition-colors font-extrabold text-blue-400 text-xl" onClick={() => scrollToSection('hero')} className="hover:text-primary transition-colors">Главная</button>
-            <button className="hover:text-primary transition-colors font-extrabold text-blue-400 text-xl" onClick={() => scrollToSection('menu')} className="hover:text-primary transition-colors">Меню</button>
-            <button className="hover:text-primary transition-colors text-blue-400 font-extrabold text-xl" onClick={() => scrollToSection('delivery')} className="hover:text-primary transition-colors">Доставка</button>
-            <button className="hover:text-primary transition-colors text-blue-400 font-extrabold text-xl" onClick={() => scrollToSection('about')} className="hover:text-primary transition-colors">О нас</button>
-            <button className="hover:text-primary transition-colors text-blue-400 font-extrabold text-xl" onClick={() => scrollToSection('services')} className="hover:text-primary transition-colors">Услуги</button>
-            <button className="hover:text-primary transition-colors text-blue-400 font-extrabold text-xl" onClick={() => scrollToSection('contacts')} className="hover:text-primary transition-colors">Контакты</button>
+          <div className="hidden md:flex items-center gap-8">
+            <button onClick={() => scrollToSection('hero')} className="hover:text-primary transition-colors">Главная</button>
+            <button onClick={() => scrollToSection('menu')} className="hover:text-primary transition-colors">Меню</button>
+            <button onClick={() => scrollToSection('delivery')} className="hover:text-primary transition-colors">Доставка</button>
+            <button onClick={() => scrollToSection('about')} className="hover:text-primary transition-colors">О нас</button>
+            <button onClick={() => scrollToSection('services')} className="hover:text-primary transition-colors">Услуги</button>
+            <button onClick={() => scrollToSection('contacts')} className="hover:text-primary transition-colors">Контакты</button>
           </div>
 
           <div className="flex items-center gap-2">
