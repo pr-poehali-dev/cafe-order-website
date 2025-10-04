@@ -286,10 +286,19 @@ const Index = () => {
         )}
       </header>
 
-      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-100">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-400 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src="/img/46649d33-5f1a-40d1-a8f7-14495a2bc97a.jpg" 
+            alt="Restaurant background" 
+            className="w-full h-full object-cover transition-transform duration-[10000ms] ease-in-out hover:scale-110"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-600/70 via-cyan-500/60 to-blue-400/70 transition-opacity duration-1000" />
+        </div>
+        
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-200 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
         </div>
         
         <div className="relative z-10 text-center space-y-8 animate-fade-in px-4 max-w-5xl mx-auto">
@@ -301,11 +310,11 @@ const Index = () => {
             />
           </div>
           
-          <h2 className="text-6xl md:text-8xl font-extrabold tracking-tight bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 bg-clip-text text-transparent">
+          <h2 className="text-6xl md:text-8xl font-extrabold tracking-tight text-white drop-shadow-2xl">
             Премиальная кухня
           </h2>
           
-          <p className="text-2xl md:text-3xl text-blue-800 font-semibold max-w-3xl mx-auto leading-relaxed">
+          <p className="text-2xl md:text-3xl text-white font-semibold max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
             Изысканные блюда от шеф-повара с доставкой на дом
           </p>
           
@@ -322,30 +331,30 @@ const Index = () => {
               size="lg" 
               variant="outline"
               onClick={() => scrollToSection('contacts')} 
-              className="text-xl px-10 py-6 border-2 border-blue-600 text-blue-600 hover:bg-blue-50 shadow-lg"
+              className="text-xl px-10 py-6 border-2 border-white text-white hover:bg-white/20 shadow-lg backdrop-blur-sm"
             >
               Контакты
             </Button>
           </div>
           
           <div className="grid grid-cols-3 gap-8 max-w-3xl mx-auto pt-12">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600">100+</div>
-              <div className="text-sm text-blue-700 mt-2">Блюд в меню</div>
+            <div className="text-center bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+              <div className="text-4xl font-bold text-white">100+</div>
+              <div className="text-sm text-white/90 mt-2">Блюд в меню</div>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600">30 мин</div>
-              <div className="text-sm text-blue-700 mt-2">Быстрая доставка</div>
+            <div className="text-center bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+              <div className="text-4xl font-bold text-white">30 мин</div>
+              <div className="text-sm text-white/90 mt-2">Быстрая доставка</div>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600">5★</div>
-              <div className="text-sm text-blue-700 mt-2">Рейтинг</div>
+            <div className="text-center bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+              <div className="text-4xl font-bold text-white">5★</div>
+              <div className="text-sm text-white/90 mt-2">Рейтинг</div>
             </div>
           </div>
         </div>
         
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <Icon name="ChevronDown" size={32} className="text-blue-600" />
+          <Icon name="ChevronDown" size={32} className="text-white drop-shadow-lg" />
         </div>
       </section>
 
