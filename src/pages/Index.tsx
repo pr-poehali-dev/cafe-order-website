@@ -319,7 +319,7 @@ const Index = () => {
               size="lg" 
               variant="outline"
               onClick={() => scrollToSection('contacts')} 
-              className="text-xl px-10 py-6 border-2 border-white text-white hover:bg-white/20 shadow-lg backdrop-blur-sm"
+              className="text-xl px-10 py-6 border-2 border-cyan-300 text-cyan-300 hover:bg-cyan-300/20 shadow-lg backdrop-blur-sm"
             >
               Контакты
             </Button>
