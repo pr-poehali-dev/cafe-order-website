@@ -293,7 +293,7 @@ const Index = () => {
             alt="Restaurant interior" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-600/60 via-blue-500/50 to-cyan-400/40" />
         </div>
         <div className="relative z-10 text-center text-white space-y-6 animate-fade-in px-4">
           <h2 className="text-5xl md:text-7xl font-bold tracking-tight">Премиальная кухня</h2>
@@ -304,7 +304,9 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="menu" className="py-20 container mx-auto px-4">
+      <section id="menu" className="py-20 container mx-auto px-4 relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-50/50 to-transparent pointer-events-none" />
+        <div className="relative z-10">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Наше меню</h2>
           <p className="text-xl text-muted-foreground">Авторские блюда из лучших ингредиентов</p>
@@ -312,7 +314,7 @@ const Index = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {menuItems.map((item, index) => (
-            <Card key={item.id} className="overflow-hidden hover:shadow-lg transition-shadow animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+            <Card key={item.id} className="overflow-hidden hover:shadow-xl hover:shadow-blue-200/50 transition-all animate-scale-in border-blue-100" style={{ animationDelay: `${index * 0.1}s` }}>
               <div className="aspect-square overflow-hidden">
                 <img src={item.image} alt={item.name} className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
               </div>
@@ -331,9 +333,10 @@ const Index = () => {
             </Card>
           ))}
         </div>
+        </div>
       </section>
 
-      <section id="delivery" className="py-20 bg-muted">
+      <section id="delivery" className="py-20 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Доставка и самовывоз</h2>
@@ -421,7 +424,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="services" className="py-20 bg-muted">
+      <section id="services" className="py-20 bg-gradient-to-br from-cyan-50 via-blue-50 to-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Наши услуги</h2>
@@ -477,7 +480,7 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="bg-secondary text-secondary-foreground py-8">
+      <footer className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm">&copy; 2024 Сойка Кафе. Все права защищены.</p>
         </div>
