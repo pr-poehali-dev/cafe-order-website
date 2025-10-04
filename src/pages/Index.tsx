@@ -142,7 +142,13 @@ const Index = () => {
     <div className="min-h-screen">
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-2xl font-bold tracking-tight">PREMIUM CAFÉ</h1>
+          <div className="flex items-center gap-3">
+            <img 
+              src="https://cdn.poehali.dev/files/5331cd08-968a-44b6-86a5-9f4b44ea9022.png" 
+              alt="Сойка Кафе" 
+              className="h-12 w-auto"
+            />
+          </div>
           
           <div className="hidden md:flex items-center gap-8">
             <button onClick={() => scrollToSection('hero')} className="hover:text-primary transition-colors">Главная</button>
